@@ -60,10 +60,6 @@ const stats = [
   ["+XX", "VENDAS GERADAS"],
 ]
 
-function Arrow() {
-  return <span aria-hidden="true">↗</span>
-}
-
 function Brand() {
   return (
     <a
@@ -352,7 +348,7 @@ export default function App() {
             "[data-cursor]",
           )
           if (!target || !cursor.current || !cursorLabel.current) return
-          const label = target.dataset.cursor === "live" ? "VIEW" : "↗"
+          const label = target.dataset.cursor === "live" ? "VIEW" : ""
           cursorLabel.current.textContent = label
           cursor.current.classList.add("is-active")
         }
@@ -421,7 +417,7 @@ export default function App() {
           ))}
         </nav>
         <a className="header-cta" href="#contato" data-cursor="link">
-          FALE COM A LIVEHOUSE <Arrow />
+          FALE COM A LIVEHOUSE
         </a>
       </header>
 
@@ -468,10 +464,10 @@ export default function App() {
                   href="#livehouse"
                   data-cursor="link"
                 >
-                  CONHEÇA A LIVEHOUSE <span>↓</span>
+                  CONHEÇA A LIVEHOUSE
                 </a>
                 <a className="text-link" href="#contato" data-cursor="link">
-                  FALE COM A GENTE <Arrow />
+                  FALE COM A GENTE
                 </a>
               </div>
             </div>
@@ -519,7 +515,7 @@ export default function App() {
         <section className="benefits" data-header-theme="light">
           <div className="section-intro">
             <p className="eyebrow" data-reveal>
-              O QUE FAZEMOS <span>↘</span>
+              O QUE FAZEMOS
             </p>
             <h2 data-reveal>
               TRANSFORMAMOS
@@ -544,7 +540,6 @@ export default function App() {
                   <h3>{benefit.title}</h3>
                   <p>{benefit.copy}</p>
                 </div>
-                <span className="card-arrow">↗</span>
               </article>
             ))}
           </div>
@@ -683,7 +678,6 @@ export default function App() {
               FALE COM A<br />
               LIVEHOUSE
             </span>
-            <Arrow />
           </a>
           <div className="cta-tags">
             <span>LIVE COMMERCE</span>
@@ -713,7 +707,7 @@ export default function App() {
               rel="noreferrer"
               data-cursor="link"
             >
-              Instagram <Arrow />
+              Instagram
             </a>
             <a
               href="https://www.tiktok.com/@livehouse.ofc"
@@ -721,13 +715,13 @@ export default function App() {
               rel="noreferrer"
               data-cursor="link"
             >
-              TikTok <Arrow />
+              TikTok
             </a>
           </div>
           <div>
             <span>CONTATO</span>
             <a href="mailto:contato@livehouse.com.br" data-cursor="link">
-              E-mail <Arrow />
+              E-mail
             </a>
             <a
               href="https://instagram.com/livehouse.ofc"
@@ -742,7 +736,7 @@ export default function App() {
         <div className="footer-bottom">
           <span>© 2026 LIVEHOUSE</span>
           <span>Uma empresa controlada pela SRX Holdings</span>
-          <a href="#intro">VOLTAR AO TOPO ↑</a>
+          <a href="#intro">VOLTAR AO TOPO</a>
         </div>
       </footer>
     </div>

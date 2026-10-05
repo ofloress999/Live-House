@@ -627,24 +627,6 @@ button {
   opacity: 0.7;
 }
 
-.card-arrow {
-  align-self: start;
-  width: 4rem;
-  height: 4rem;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(247, 247, 245, 0.4);
-  border-radius: 50%;
-  font-size: 1.4rem;
-  transition: color 0.3s, background 0.3s, transform 0.3s;
-}
-
-.benefit-card:hover .card-arrow {
-  color: var(--black);
-  background: var(--white);
-  transform: rotate(45deg);
-}
-
 .commerce-section {
   position: relative;
   padding: 11rem 0 8rem;
@@ -1103,7 +1085,7 @@ footer {
   }
 
   .hero-title {
-    font-size: clamp(3.45rem, 14.7vw, 7rem);
+    font-size: clamp(2rem, 11vw, 4rem);
     line-height: 0.82;
   }
 
@@ -1195,12 +1177,7 @@ footer {
   }
 
   .benefit-card h3 {
-    font-size: clamp(2.8rem, 12vw, 5rem);
-  }
-
-  .card-arrow {
-    width: 3rem;
-    height: 3rem;
+    font-size: clamp(2.3rem, 10vw, 4rem);
   }
 
   .commerce-section,
@@ -1214,7 +1191,7 @@ footer {
   }
 
   .commerce-headline {
-    font-size: clamp(4rem, 17vw, 7rem);
+    font-size: clamp(2.8rem, 13vw, 5rem);
   }
 
   .commerce-headline .thin {
@@ -1229,6 +1206,10 @@ footer {
     margin-bottom: 6rem;
   }
 
+  .process-heading h2 {
+    font-size: clamp(2.8rem, 12vw, 4rem);
+  }
+
   .timeline {
     padding-left: 2.5rem;
   }
@@ -1240,7 +1221,7 @@ footer {
   }
 
   .timeline-step h3 {
-    font-size: clamp(2.5rem, 12vw, 4.5rem);
+    font-size: clamp(2.2rem, 10vw, 3.6rem);
   }
 
   .timeline-line {
@@ -1285,7 +1266,7 @@ footer {
 
   .final-cta h2 {
     margin-top: 10vh;
-    font-size: 21vw;
+    font-size: 17vw;
     line-height: 0.73;
   }
 
@@ -1345,7 +1326,7 @@ footer {
   .hero-bottom > p { max-width: 90%; }
   .text-link { font-size: 0.58rem; }
   .section-intro h2,
-  .stats-heading h2 { font-size: 17vw; }
+  .stats-heading h2 { font-size: 11vw; }
   .benefits { padding-bottom: 8rem; }
   .benefit-card { margin-bottom: 10vh; }
   .answer-foot { align-self: flex-start; }
